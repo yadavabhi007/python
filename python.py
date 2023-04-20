@@ -123,5 +123,10 @@
 # print("The reverse string is",reverse_string(str))
 
 
-
+# str = 'abhishek'
+# for i in str:
+#     if i=='e':
+#         print('f', end='')
+#     else:
+#         print(i, end='')
 
