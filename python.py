@@ -1,3 +1,16 @@
+# import requests
+# url = "http:127.0.0:8000/api/add-student/"
+# data = {
+#   "first_name": "Abhishek",
+#   "last_name": "Yadav",
+#   "age": 26,
+#   "phone": "+918080808080",
+# }
+# post_data = requests.post(url=url, data=data)
+# my_data = post_data.json()
+# print(my_data)
+
+
 # def func(a,b):
 #     a+=1
 #     b.append(1)
