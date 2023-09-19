@@ -11,14 +11,6 @@
 # print(my_data)
 
 
-# def func(a,b):
-#     a+=1
-#     b.append(1)
-# a,b=0,[]
-# func(a,b)
-# print(a,b)
-
-
 # t=(3,4,[5,6])
 # t[2][1]=7
 # print(t)
@@ -50,9 +42,9 @@
 #         if n%i==0:
 #             break
 #     else:
-#         print(n, end=' ')  
+#         print(n, end=' ')
 
- 
+
 # n = [1,5,7,4,2,8,1]
 # for i in range(len(n)):
 #     for j in range(i+1,len(n)):
@@ -64,7 +56,9 @@
 # def fib(n):
 #     a = 0
 #     b = 1
-#     if n == 1:
+#     if n<=0:
+#         print('Enter number greater than 0')
+#     elif n == 1:
 #         print(a)
 #     else:
 #         print(a)
@@ -74,7 +68,7 @@
 #         a = b
 #         b = c
 #         print (c)
-# fib(5)
+# fib(-4)
 
 
 # f = lambda a : a*a
@@ -87,30 +81,30 @@
 #     print()
 
 
-# def triangle(n):	
-# 	# number of spaces
-# 	k = n - 1
-# 	# outer loop to handle number of rows
-# 	for i in range(0, n):
-# 		# inner loop to handle number spaces
-# 		# values changing acc. to requirement
-# 		for j in range(0, k):
-# 			print(end=" ")
-# 		# decrementing k after each loop
-# 		k = k - 1
-# 		# inner loop to handle number of columns
-# 		# values changing acc. to outer loop
-# 		for j in range(0, i+1):
-# 			# printing stars
-# 			print("* ", end="")
-# 		# inner loop to handle number of columns
-# 		# ending line after each row
-# 		print("\r")
+# def triangle(n):
+#     # number of spaces
+#     k = n - 1
+#     # outer loop to handle number of rows
+#     for i in range(0, n):
+#         # inner loop to handle number spaces
+#         # values changing acc. to requirement
+#         for j in range(0, k):
+#             print(end=" ")
+#         # decrementing k after each loop
+#         k = k - 1
+#         # inner loop to handle number of columns
+#         # values changing acc. to outer loop
+#         for j in range(0, i+1):
+#             # printing stars
+#             print("* ", end="")
+#         # inner loop to handle number of columns
+#         # ending line after each row
+#         print("\r")
 # n = int(input())
 # triangle(n)
 
 
-# def binaryToDecimal(val): 
+# def binaryToDecimal(val):
 #     return int(val, 2)
 # print(binaryToDecimal('1111'))
 # print(bin(111))
@@ -126,15 +120,6 @@
 # decimalToBinary(val)
 
 
-# def reverse_string(str):  
-#     str1 = ""  
-#     for i in str:  
-#         str1 = i + str1  
-#     return str1
-# str = "JavaTpoint"       
-# print("The original string is: ",str)  
-# print("The reverse string is",reverse_string(str))
-
 
 # str = 'abhishek'
 # for i in str:
@@ -143,3 +128,58 @@
 #     else:
 #         print(i, end='')
 
+
+# a = 27
+# b = 6
+# a = a^b
+# b = a^b
+# a = a^b
+# print(a)
+# print(b)
+
+
+# for i in range(1,11):
+#     if i%3==0:
+#         continue
+#     print(i)
+
+
+# from numpy import *
+# m = matrix('1,2; 4,5')
+# print(diagonal(m))
+# print(m.max())
+
+
+# def fact(n):
+#     if n==0:
+#         return 1
+#     return n*fact(n-1)
+# result = fact(5)
+# print(result)
+
+
+# a = [1,4,6,3,7,8]
+# b = list(filter(lambda n : n%2!=0, a))
+# print(b)
+
+
+# a = [1,4,6,3,7,8]
+# b = list(map(lambda n : n*2, a))
+# print(b)
+
+
+# number=int(input("Enter a number :"))
+# rev=0
+# while(number!=0):
+#     digit=number%10
+#     rev=(rev*10)+digit
+#     number=number//10
+# print(rev)
+
+
+# input_string = "Hello, World!"
+# reversed_str = ""
+# for char in input_string:
+#     reversed_str = char + reversed_str
+# print(reversed_str)
+ 
