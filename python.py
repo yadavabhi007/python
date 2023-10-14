@@ -106,7 +106,7 @@
 
 # def binaryToDecimal(val):
 #     return int(val, 2)
-# print(binaryToDecimal('1111'))
+# print(binaryToDecimal('111'))
 # print(bin(111))
 
 
@@ -168,6 +168,10 @@
 # print(b)
 
 
+# t = tuple(map(int, input().split()))
+# print(t)
+
+
 # number=int(input("Enter a number :"))
 # rev=0
 # while(number!=0):
@@ -182,4 +186,96 @@
 # for char in input_string:
 #     reversed_str = char + reversed_str
 # print(reversed_str)
- 
+
+
+# def topten():
+#     n = 1
+#     while n<=10:
+#         sq = n*n
+#         yield sq
+#         n += 1
+# values = topten()
+# for i in values:
+#     print (i)
+
+
+# class A:
+#     def __str__(self):
+#         return '1'
+# class B(A):
+#     def __init__(self):
+#         super().__init__()
+# a1 = A()
+# b1 = B()
+# print(a1, b1)
+
+
+# class MyClass:
+#     def __init__(self):
+#         self.__my_var = 42
+
+#     def __my_method(self):
+#         print("This is a private method.")
+
+# class SubClass(MyClass):
+#     def print_private_var(self):
+#         print(self._MyClass__my_var)  # Accessing the private attribute from the superclass
+
+#     def call_private_method(self):
+#         self._MyClass__my_method()  # Accessing the private method from the superclass
+
+# # Create an instance of SubClass
+# obj = SubClass()
+
+# obj.print_private_var()
+# obj.call_private_method()
+
+
+# a = [1,2,7,4]
+# b = []
+# j = len(a)-1
+# while j>=0:
+#     b.append(a[j])
+#     j-=1
+# print(b)
+
+
+# a = [1,2,7,4]
+# b = [a[i] for i in range(len(a)-1,-1,-1)]
+# print(b)
+
+
+# a = range(5,12,2)
+# b = list(a)
+# print(b)
+
+
+# a = "this is     a   cat."
+# b = ' '.join(a.split())
+# print(b)
+
+
+
+
+# def sum_of_digits(n):
+#     if n < 10:
+#         return n
+#     else:
+#         return n % 10 + sum_of_digits(n // 10)
+    
+# try:
+#     num = int(input('Enter A Positive Integer: '))
+#     if num < 1:
+#         print('Please Enter A Positive Integer')
+#     else:
+#         digit_sum = sum_of_digits(num)
+#         print(f'The Sum Of Gigits In {num} Is {digit_sum}')
+# except ValueError:
+#     print('Please Enter A Positive Integer')
+
+
+
+
+
+
+
